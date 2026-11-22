@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Created by Ahmad Nawaz -->
+    <!-- Modified by Ahmad Nawaz -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Register to join Ahmad Nawaz's personal website community.">
+    <title>Register | Ahmad Nawaz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Ahmad Nawaz home">AHMAD <span>NAWAZ</span></a>
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#values">What I Value</a>
+            <a href="index.html#photo">A Moment</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="register.html" aria-current="page">Register</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="register-hero">
+            <h1>Join the community</h1>
+            <p>Create an account to connect with this personal website community. Complete each field and accept the terms to register.</p>
+        </section>
+
+        <section class="register-section" aria-label="Registration form">
+            <form class="register-form" action="https://httpbin.org/post" method="post">
+                <div class="form-field">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" autocomplete="name" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" name="email" autocomplete="email" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" minlength="3" autocomplete="username" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" minlength="8" autocomplete="new-password" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="user-type">User type</label>
+                    <select id="user-type" name="user_type" required>
+                        <option value="" selected disabled>Choose your role</option>
+                        <option value="student">Student</option>
+                        <option value="friend">Friend</option>
+                        <option value="visitor">Visitor</option>
+                    </select>
+                </div>
+
+                <div class="terms-field">
+                    <input type="checkbox" id="terms" name="terms" value="accepted" required>
+                    <label for="terms">I accept the Terms of Use: I will use this community respectfully, provide accurate information, and keep my account details private.</label>
+                </div>
+
+                <button class="register-button" type="submit">Register</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <span>© 2026 Ahmad Nawaz</span>
+        <span>Personal website · HTML &amp; CSS</span>
+    </footer>
+</body>
+</html>
